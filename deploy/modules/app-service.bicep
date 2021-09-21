@@ -11,6 +11,7 @@ param environmentType string
 @description('The name of the App Service app. This name must be globally unique.')
 param appServiceAppName string
 
+
 var appServicePlanName = 'toy-website-plan'
 var appServicePlanSkuName = (environmentType == 'prod') ? 'P2v3' : 'F1'
 var appServicePlanTierName = (environmentType == 'prod') ? 'PremiumV3' : 'Free'
